@@ -1,5 +1,10 @@
 {
   "name": "hardhat-project",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:goerli": "hardhat run ./scripts/deploy.js --network goerli",
+    "deploy:mainnet": "hardhat run ./scripts/deploy.js --network mainnet"
+  },
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.6",
     "@nomiclabs/hardhat-etherscan": "^3.1.0",
